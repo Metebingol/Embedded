@@ -1,0 +1,3 @@
+clockSetup_clk_wiz.v,verilog,xil_defaultlib,../../../../UART.gen/sources_1/ip/clockSetup/clockSetup_clk_wiz.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+clockSetup.v,verilog,xil_defaultlib,../../../../UART.gen/sources_1/ip/clockSetup/clockSetup.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v

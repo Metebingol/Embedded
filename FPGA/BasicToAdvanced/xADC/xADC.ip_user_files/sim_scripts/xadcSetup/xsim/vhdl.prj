@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../xADC.gen/sources_1/ip/xadcSetup/xadcSetup.vhd" \
+
+nosort

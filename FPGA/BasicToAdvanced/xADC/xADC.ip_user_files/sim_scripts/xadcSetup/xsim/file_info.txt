@@ -1,0 +1,2 @@
+xadcSetup.vhd,vhdl,xil_defaultlib,../../../../xADC.gen/sources_1/ip/xadcSetup/xadcSetup.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

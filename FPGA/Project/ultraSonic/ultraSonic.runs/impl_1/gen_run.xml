@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1659695192">
+  <File Type="ROUTE-PWR" Name="sonic_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="sonic.tcl"/>
+  <File Type="BITSTR-MMI" Name="sonic.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sonic_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="sonic_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="sonic_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="sonic_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="sonic_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="sonic_opt.dcp"/>
+  <File Type="OPT-DRC" Name="sonic_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="sonic.hwdef"/>
+  <File Type="PWROPT-DCP" Name="sonic_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="sonic_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="sonic_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="sonic_placed.dcp"/>
+  <File Type="PLACE-IO" Name="sonic_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="sonic_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="sonic_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="sonic_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="sonic_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="sonic_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="sonic_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="sonic.bin"/>
+  <File Type="PLACE-TIMING" Name="sonic_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="sonic_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="sonic.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="sonic_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="sonic_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="sonic_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="sonic.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="sonic_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="sonic_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="sonic_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="sonic_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="sonic_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="sonic_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="sonic_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="sonic_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sonic_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sonic_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="sonic_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="sonic_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="sonic_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="sonic_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="sonic_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="sonic_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="sonic_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="sonic_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="sonic_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="sonic_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="sonic_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="sonic_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sonic_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="sonic_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sonic_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sonic_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="sonic_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="sonic.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="sonic_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="sonic_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="sonic.nky"/>
+  <File Type="BITSTR-BMM" Name="sonic_bd.bmm"/>
+  <File Type="PDI-FILE" Name="sonic.pdi"/>
+  <File Type="RCFI_FILE" Name="sonic.rcfi"/>
+  <File Type="CFI_FILE" Name="sonic.cfi"/>
+  <File Type="RNPI_FILE" Name="sonic.rnpi"/>
+  <File Type="NPI_FILE" Name="sonic.npi"/>
+  <File Type="RBD_FILE" Name="sonic.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="sonic.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="sonic.sysdef"/>
+  <File Type="BG-BGN" Name="sonic.bgn"/>
+  <File Type="BG-DRC" Name="sonic.drc"/>
+  <File Type="RDI-RDI" Name="sonic.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/sonic.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="sonic"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/top.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../helloWorld/helloWorld.srcs/constrs_1/imports/new/top.xdc"/>
+        <Attr Name="ImportTime" Val="1659430155"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/sonic.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clkSetup"/>
+</GenRun>

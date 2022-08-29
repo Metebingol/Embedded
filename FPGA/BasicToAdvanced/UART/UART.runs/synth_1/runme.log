@@ -1,0 +1,312 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Studies/FPGA/libraries/UART/UART.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Studies/FPGA/libraries/UART/UART.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20392
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/uartRecieve.vhd:26]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/uartTransmit.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/top.vhd:16]
+INFO: [Synth 8-3491] module 'clockSetup' declared at 'C:/Studies/FPGA/libraries/UART/UART.runs/synth_1/.Xil/Vivado-14392-DESKTOP-E5S1MHN/realtime/clockSetup_stub.vhdl:5' bound to instance 'clock' of component 'clockSetup' [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/top.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'clockSetup' [C:/Studies/FPGA/libraries/UART/UART.runs/synth_1/.Xil/Vivado-14392-DESKTOP-E5S1MHN/realtime/clockSetup_stub.vhdl:14]
+	Parameter baudRate bound to: 9600 - type: integer 
+	Parameter clockRate bound to: 100000000 - type: integer 
+	Parameter stopBitNumber bound to: 2 - type: integer 
+	Parameter dataBitNumber bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'uartTransmit' declared at 'C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/uartTransmit.vhd:3' bound to instance 'transmitter' of component 'uartTransmit' [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/top.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'uartTransmit' [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/uartTransmit.vhd:22]
+	Parameter baudRate bound to: 9600 - type: integer 
+	Parameter clockRate bound to: 100000000 - type: integer 
+	Parameter stopBitNumber bound to: 2 - type: integer 
+	Parameter dataBitNumber bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uartTransmit' (1#1) [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/uartTransmit.vhd:22]
+	Parameter dataBitNumber bound to: 8 - type: integer 
+	Parameter stopBitNumber bound to: 2 - type: integer 
+	Parameter baudRate bound to: 9600 - type: integer 
+	Parameter clockRate bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'uartRecieve' declared at 'C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/uartRecieve.vhd:3' bound to instance 'reciever' of component 'uartRecieve' [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/top.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'uartRecieve' [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/uartRecieve.vhd:22]
+	Parameter dataBitNumber bound to: 8 - type: integer 
+	Parameter stopBitNumber bound to: 2 - type: integer 
+	Parameter baudRate bound to: 9600 - type: integer 
+	Parameter clockRate bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uartRecieve' (2#1) [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/uartRecieve.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'top' (3#1) [C:/Studies/FPGA/libraries/UART/UART.srcs/sources_1/new/top.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1359.152 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Studies/FPGA/libraries/UART/UART.gen/sources_1/ip/clockSetup/clockSetup/clockSetup_in_context.xdc] for cell 'clock'
+Finished Parsing XDC File [c:/Studies/FPGA/libraries/UART/UART.gen/sources_1/ip/clockSetup/clockSetup/clockSetup_in_context.xdc] for cell 'clock'
+Parsing XDC File [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'osc'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc:35]
+Finished Parsing XDC File [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Studies/FPGA/libraries/UART/UART.srcs/constrs_1/imports/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1359.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1359.152 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Studies/FPGA/libraries/UART/UART.gen/sources_1/ip/clockSetup/clockSetup/clockSetup_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Studies/FPGA/libraries/UART/UART.gen/sources_1/ip/clockSetup/clockSetup/clockSetup_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for clock. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'uartTransmit'
+INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'uartRecieve'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                freemode |                               00 |                               11
+               startmode |                               01 |                               00
+        transmissionmode |                               10 |                               10
+                stopmode |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'status_reg' using encoding 'sequential' in module 'uartTransmit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                freemode |                               00 |                               11
+               startmode |                               01 |                               00
+        transmissionmode |                               10 |                               10
+                stopmode |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'status_reg' using encoding 'sequential' in module 'uartRecieve'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 9     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 14    
+	   2 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (reciever/FSM_sequential_status_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (reciever/FSM_sequential_status_reg[0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clockSetup    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |clockSetup_bbox |     1|
+|2     |CARRY4          |    36|
+|3     |LUT1            |     3|
+|4     |LUT2            |    35|
+|5     |LUT3            |     1|
+|6     |LUT4            |     3|
+|7     |LUT5            |     1|
+|8     |LUT6            |    13|
+|9     |FDRE            |    99|
+|10    |OBUF            |     2|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1359.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1359.152 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1359.152 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1359.152 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1359.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b43cb25c
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1359.152 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Studies/FPGA/libraries/UART/UART.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 26 13:06:53 2022...
