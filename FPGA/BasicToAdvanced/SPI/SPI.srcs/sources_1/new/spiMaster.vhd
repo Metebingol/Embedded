@@ -12,7 +12,7 @@ entity spiMaster is
         clockIN      : in std_logic;
         resetClock   : in std_logic;
         ClockLevel_P : in std_logic := '0'; -- Clock start level configuration parameter : Low => clock Low
-        ClockEgde_P  : in std_logic := '0'; -- Clock Edge configuaration parameter: Low => Rising Edge
+        ClockEdge_P  : in std_logic := '0'; -- Clock Edge configuaration parameter: Low => Rising Edge
         dataout      : in std_logic_vector (7 downto 0); -- Data to send slave with MOSI
         slaveSelect  : in std_logic_vector (slaveNumber - 1 downto 0) := (others => '1'); -- array to active transmission
         MOSI         : out std_logic;
@@ -56,14 +56,14 @@ begin
     );
 
     process is
-        count : integer := 0;
+        variable count : integer := 0;
     begin
         if (resetClock = '0') then
-        elsif ((rising_edge(sclk) and ClockEdge_p = '0') or (falling_edge(sclk) and ClockEdge_p = '1')) then
+        elsif (((rising_edge(sclk)) and (ClockEdge_p = '0')) or ((falling_edge(sclk)) and (ClockEdge_p = '1'))) then
             case stateMaster is
                 when ready =>
                     for i in 0 to slaveNumber - 1 loop
-                        if slaceSelect(i) = '0' then
+                        if slaveSelect(i) = '0' then
                             stateMaster <= Transmission;
                         end if;
                     end loop;
