@@ -1,43 +1,29 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 08/31/2022 09:26:19 AM
--- Design Name: 
--- Module Name: spiMaster - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
 
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+use IEEE.STD_LOGIC_1164.all;
 
 entity spiMaster is
---  Port ( );
+    port (
+        clock : in std_logic;
+        reset : in std_logic
+    );
 end spiMaster;
 
 architecture Behavioral of spiMaster is
 
+    component clockDivider is
+        port (
+            clock      : in std_logic;
+            reset_D    : in std_logic;
+            clockOut_D : inout std_logic
+        );
+    end component;
+    signal clock_D_2 : std_logic;
+
 begin
-
-
+    clockDivide : clockDivider port map(
+        clock      => clock,
+        reset_D    => reset,
+        clockOut_D => clock_D_2
+    );
 end Behavioral;

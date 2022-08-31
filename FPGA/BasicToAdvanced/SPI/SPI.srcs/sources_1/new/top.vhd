@@ -1,43 +1,32 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 08/31/2022 09:27:01 AM
--- Design Name: 
--- Module Name: top - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+use IEEE.STD_LOGIC_1164.all;
 
 entity top is
---  Port ( );
+    port (
+        clk : in std_logic
+    );
 end top;
 
 architecture Behavioral of top is
 
+    component clockSetup is
+        port (
+            clk_in1  : in std_logic;
+            locked   : out std_logic;
+            clk_out1 : out std_logic;
+            clk_out2 : out std_logic
+        );
+    end component;
+    signal clockOut100 : std_logic;
+    signal clockOut50  : std_logic;
+    signal reset       : std_logic;
 begin
 
+    clock : clockSetup port map(
+        clk_in1  => clk,
+        clk_out1 => clockOut100,
+        clk_out2 => clockOut50,
+        locked   => reset
+    );
 
 end Behavioral;
