@@ -1,0 +1,472 @@
+
+*** Running vivado
+    with args -log micro_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source micro_wrapper.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source micro_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Studies/Embedded/FPGA/BasicToAdvanced/ip_repo/myGPIO_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top micro_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9568
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'micro_wrapper' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/hdl/micro_wrapper.vhd:25]
+INFO: [Synth 8-3491] module 'micro' declared at 'c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:1836' bound to instance 'micro_i' of component 'micro' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/hdl/micro_wrapper.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'micro' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:1851]
+INFO: [Synth 8-3491] module 'micro_axi_gpio_0_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'micro_axi_gpio_0_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:2210]
+INFO: [Synth 8-638] synthesizing module 'micro_axi_gpio_0_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'micro_axi_uartlite_0_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'micro_axi_uartlite_0_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:2233]
+INFO: [Synth 8-638] synthesizing module 'micro_axi_uartlite_0_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'micro_clk_wiz_1_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'micro_clk_wiz_1_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:2258]
+INFO: [Synth 8-638] synthesizing module 'micro_clk_wiz_1_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_clk_wiz_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'micro_mdm_1_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'micro_mdm_1_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:2265]
+INFO: [Synth 8-638] synthesizing module 'micro_mdm_1_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'micro_microblaze_0_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'micro_microblaze_0_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:2278]
+INFO: [Synth 8-638] synthesizing module 'micro_microblaze_0_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-3491] module 'micro_microblaze_0_axi_intc_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'micro_microblaze_0_axi_intc_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:2364]
+INFO: [Synth 8-638] synthesizing module 'micro_microblaze_0_axi_intc_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_microblaze_0_axi_intc_0_stub.vhdl:36]
+INFO: [Synth 8-638] synthesizing module 'micro_microblaze_0_axi_periph_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:1203]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1J6TV2O' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1J6TV2O' (1#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_Z9BZW8' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_Z9BZW8' (2#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_UN36YP' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_UN36YP' (3#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1NTE961' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:364]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1NTE961' (4#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:364]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_144I9OB' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:1033]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_144I9OB' (5#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:1033]
+INFO: [Synth 8-3491] module 'micro_xbar_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'micro_xbar_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:1735]
+INFO: [Synth 8-638] synthesizing module 'micro_xbar_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'micro_microblaze_0_axi_periph_0' (6#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:1203]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_QYMPYA' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:454]
+INFO: [Synth 8-3491] module 'micro_dlmb_bram_if_cntlr_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'micro_dlmb_bram_if_cntlr_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:668]
+INFO: [Synth 8-638] synthesizing module 'micro_dlmb_bram_if_cntlr_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'micro_dlmb_v10_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'micro_dlmb_v10_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:722]
+INFO: [Synth 8-638] synthesizing module 'micro_dlmb_v10_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'micro_ilmb_bram_if_cntlr_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'micro_ilmb_bram_if_cntlr_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:750]
+INFO: [Synth 8-638] synthesizing module 'micro_ilmb_bram_if_cntlr_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'micro_ilmb_v10_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'micro_ilmb_v10_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:804]
+INFO: [Synth 8-638] synthesizing module 'micro_ilmb_v10_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'micro_lmb_bram_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'micro_lmb_bram_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:832]
+INFO: [Synth 8-638] synthesizing module 'micro_lmb_bram_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_QYMPYA' (7#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:454]
+INFO: [Synth 8-3491] module 'micro_microblaze_0_xlconcat_0' declared at 'c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_microblaze_0_xlconcat_0/synth/micro_microblaze_0_xlconcat_0.v:60' bound to instance 'microblaze_0_xlconcat' of component 'micro_microblaze_0_xlconcat_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:2521]
+INFO: [Synth 8-6157] synthesizing module 'micro_microblaze_0_xlconcat_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_microblaze_0_xlconcat_0/synth/micro_microblaze_0_xlconcat_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (8#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'micro_microblaze_0_xlconcat_0' (9#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_microblaze_0_xlconcat_0/synth/micro_microblaze_0_xlconcat_0.v:60]
+INFO: [Synth 8-3491] module 'micro_myGPIO_0_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_myGPIO_0_0_stub.vhdl:5' bound to instance 'myGPIO_0' of component 'micro_myGPIO_0_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:2526]
+INFO: [Synth 8-638] synthesizing module 'micro_myGPIO_0_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_myGPIO_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'micro_rst_clk_wiz_1_100M_0' declared at 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'micro_rst_clk_wiz_1_100M_0' [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:2551]
+INFO: [Synth 8-638] synthesizing module 'micro_rst_clk_wiz_1_100M_0' [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/.Xil/Vivado-13356-DESKTOP-E5S1MHN/realtime/micro_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'micro' (10#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/synth/micro.vhd:1851]
+INFO: [Synth 8-256] done synthesizing module 'micro_wrapper' (11#1) [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/hdl/micro_wrapper.vhd:25]
+WARNING: [Synth 8-7129] Port In1[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1354.758 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_axi_uartlite_0_0/micro_axi_uartlite_0_0/micro_axi_uartlite_0_0_in_context.xdc] for cell 'micro_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_axi_uartlite_0_0/micro_axi_uartlite_0_0/micro_axi_uartlite_0_0_in_context.xdc] for cell 'micro_i/axi_uartlite_0'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_axi_gpio_0_0/micro_axi_gpio_0_0/micro_axi_gpio_0_0_in_context.xdc] for cell 'micro_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_axi_gpio_0_0/micro_axi_gpio_0_0/micro_axi_gpio_0_0_in_context.xdc] for cell 'micro_i/axi_gpio_0'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_myGPIO_0_0/micro_myGPIO_0_0/micro_myGPIO_0_0_in_context.xdc] for cell 'micro_i/myGPIO_0'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_myGPIO_0_0/micro_myGPIO_0_0/micro_myGPIO_0_0_in_context.xdc] for cell 'micro_i/myGPIO_0'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_microblaze_0_0/micro_microblaze_0_0/micro_microblaze_0_0_in_context.xdc] for cell 'micro_i/microblaze_0'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_microblaze_0_0/micro_microblaze_0_0/micro_microblaze_0_0_in_context.xdc] for cell 'micro_i/microblaze_0'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_dlmb_v10_0/micro_dlmb_v10_0/micro_ilmb_v10_0_in_context.xdc] for cell 'micro_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_dlmb_v10_0/micro_dlmb_v10_0/micro_ilmb_v10_0_in_context.xdc] for cell 'micro_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_ilmb_v10_0/micro_ilmb_v10_0/micro_ilmb_v10_0_in_context.xdc] for cell 'micro_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_ilmb_v10_0/micro_ilmb_v10_0/micro_ilmb_v10_0_in_context.xdc] for cell 'micro_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_dlmb_bram_if_cntlr_0/micro_dlmb_bram_if_cntlr_0/micro_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'micro_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_dlmb_bram_if_cntlr_0/micro_dlmb_bram_if_cntlr_0/micro_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'micro_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_ilmb_bram_if_cntlr_0/micro_ilmb_bram_if_cntlr_0/micro_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'micro_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_ilmb_bram_if_cntlr_0/micro_ilmb_bram_if_cntlr_0/micro_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'micro_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_lmb_bram_0/micro_lmb_bram_0/micro_lmb_bram_0_in_context.xdc] for cell 'micro_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_lmb_bram_0/micro_lmb_bram_0/micro_lmb_bram_0_in_context.xdc] for cell 'micro_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_xbar_0/micro_xbar_0/micro_xbar_0_in_context.xdc] for cell 'micro_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_xbar_0/micro_xbar_0/micro_xbar_0_in_context.xdc] for cell 'micro_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_microblaze_0_axi_intc_0/micro_microblaze_0_axi_intc_0/micro_microblaze_0_axi_intc_0_in_context.xdc] for cell 'micro_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_microblaze_0_axi_intc_0/micro_microblaze_0_axi_intc_0/micro_microblaze_0_axi_intc_0_in_context.xdc] for cell 'micro_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_mdm_1_0/micro_mdm_1_0/micro_mdm_1_0_in_context.xdc] for cell 'micro_i/mdm_1'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_mdm_1_0/micro_mdm_1_0/micro_mdm_1_0_in_context.xdc] for cell 'micro_i/mdm_1'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_clk_wiz_1_0/micro_clk_wiz_1_0/micro_clk_wiz_1_0_in_context.xdc] for cell 'micro_i/clk_wiz_1'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_clk_wiz_1_0/micro_clk_wiz_1_0/micro_clk_wiz_1_0_in_context.xdc] for cell 'micro_i/clk_wiz_1'
+Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_rst_clk_wiz_1_100M_0/micro_rst_clk_wiz_1_100M_0/micro_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'micro_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_rst_clk_wiz_1_100M_0/micro_rst_clk_wiz_1_100M_0/micro_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'micro_i/rst_clk_wiz_1_100M'
+Parsing XDC File [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[0]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[0]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[1]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[1]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[2]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[2]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[3]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[3]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[4]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[4]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[5]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[5]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[6]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[6]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[7]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[7]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[8]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[8]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[9]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[9]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[10]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[10]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[11]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[11]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[12]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[12]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[13]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[13]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[14]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[14]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[15]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_i[15]'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'rx'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'rx'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'tx'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'tx'. [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc:47]
+Finished Parsing XDC File [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/micro_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.srcs/constrs_1/imports/new/master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/micro_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/micro_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1354.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1354.758 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'micro_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_clk_wiz_1_0/micro_clk_wiz_1_0/micro_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.gen/sources_1/bd/micro/ip/micro_clk_wiz_1_0/micro_clk_wiz_1_0/micro_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/myGPIO_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |micro_xbar_0                  |         1|
+|2     |micro_axi_gpio_0_0            |         1|
+|3     |micro_axi_uartlite_0_0        |         1|
+|4     |micro_clk_wiz_1_0             |         1|
+|5     |micro_mdm_1_0                 |         1|
+|6     |micro_microblaze_0_0          |         1|
+|7     |micro_microblaze_0_axi_intc_0 |         1|
+|8     |micro_myGPIO_0_0              |         1|
+|9     |micro_rst_clk_wiz_1_100M_0    |         1|
+|10    |micro_dlmb_bram_if_cntlr_0    |         1|
+|11    |micro_dlmb_v10_0              |         1|
+|12    |micro_ilmb_bram_if_cntlr_0    |         1|
+|13    |micro_ilmb_v10_0              |         1|
+|14    |micro_lmb_bram_0              |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |micro_axi_gpio_0_0_bbox            |     1|
+|2     |micro_axi_uartlite_0_0_bbox        |     1|
+|3     |micro_clk_wiz_1_0_bbox             |     1|
+|4     |micro_dlmb_bram_if_cntlr_0_bbox    |     1|
+|5     |micro_dlmb_v10_0_bbox              |     1|
+|6     |micro_ilmb_bram_if_cntlr_0_bbox    |     1|
+|7     |micro_ilmb_v10_0_bbox              |     1|
+|8     |micro_lmb_bram_0_bbox              |     1|
+|9     |micro_mdm_1_0_bbox                 |     1|
+|10    |micro_microblaze_0_0_bbox          |     1|
+|11    |micro_microblaze_0_axi_intc_0_bbox |     1|
+|12    |micro_myGPIO_0_0_bbox              |     1|
+|13    |micro_rst_clk_wiz_1_100M_0_bbox    |     1|
+|14    |micro_xbar_0_bbox                  |     1|
+|15    |IBUF                               |    18|
+|16    |OBUF                               |     1|
++------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1354.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1354.758 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1354.758 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1354.758 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1361.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a56b6a84
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 142 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1361.965 ; gain = 7.207
+INFO: [Common 17-1381] The checkpoint 'C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1/micro_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file micro_wrapper_utilization_synth.rpt -pb micro_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  2 16:24:47 2022...

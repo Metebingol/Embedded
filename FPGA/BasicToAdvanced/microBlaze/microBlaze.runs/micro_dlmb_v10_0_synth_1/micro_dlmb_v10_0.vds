@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Sep  2 16:21:26 2022
+# Process ID: 6472
+# Current directory: C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/micro_dlmb_v10_0_synth_1
+# Command line: vivado.exe -log micro_dlmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source micro_dlmb_v10_0.tcl
+# Log file: C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/micro_dlmb_v10_0_synth_1/micro_dlmb_v10_0.vds
+# Journal file: C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/micro_dlmb_v10_0_synth_1\vivado.jou
+# Running On: DESKTOP-E5S1MHN, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17096 MB
+#-----------------------------------------------------------
+source micro_dlmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1332.266 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Studies/Embedded/FPGA/BasicToAdvanced/ip_repo/myGPIO_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP micro_dlmb_v10_0, cache-ID = 1bf212c13d3bd705.
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  2 16:21:47 2022...

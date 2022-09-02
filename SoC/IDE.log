@@ -1,0 +1,10 @@
+17:03:29 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Studies\Embedded\SoC\temp_xsdb_launch_script.tcl
+17:03:29 INFO  : Registering command handlers for Vitis TCF services
+17:03:29 INFO  : Platform repository initialization has completed.
+17:03:32 INFO  : XSCT server has started successfully.
+17:03:32 INFO  : Successfully done setting XSCT server connection channel  
+17:03:32 INFO  : plnx-install-location is set to ''
+17:03:32 INFO  : Successfully done setting workspace for the tool. 
+17:03:32 INFO  : Successfully done query RDI_DATADIR 
+17:04:07 INFO  : Result from executing command 'getProjects': firstMicroBlaze
+17:04:07 INFO  : Result from executing command 'getPlatforms': 
