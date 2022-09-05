@@ -1,3 +1,46 @@
-timestamp=[2022-09-05 09:13:08], mode=WORKBENCH_START, duration=0:00:06.608, duration_ms=6608, data={}
-timestamp=[2022-09-05 09:13:08], mode=WORKBENCH_UI_INIT, duration=0:00:00.327, duration_ms=327, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
-timestamp=[2022-09-05 09:13:09], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.112, duration_ms=112, data={}
+timestamp=[2022-09-05 11:42:56], mode=PLATFORM_CREATION, duration=0:00:03.502, duration_ms=3502, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2022-09-05 11:46:22], mode=PLATFORM_GENERATION, duration=0:00:03.680, duration_ms=3680, data={name=test}
+timestamp=[2022-09-05 11:46:35], mode=PLATFORM_GENERATION, duration=0:00:02.713, duration_ms=2713, data={name=test}
+timestamp=[2022-09-05 11:49:25], mode=PLATFORM_GENERATION, duration=0:00:02.824, duration_ms=2824, data={name=test}
+timestamp=[2022-09-05 11:53:05], mode=PLATFORM_GENERATION, duration=0:00:02.726, duration_ms=2726, data={name=test}
+timestamp=[2022-09-05 11:53:53], mode=PLATFORM_GENERATION, duration=0:00:02.357, duration_ms=2357, data={name=test}
+timestamp=[2022-09-05 12:32:37], mode=PLATFORM_GENERATION, duration=0:00:06.843, duration_ms=6843, data={name=test}
+timestamp=[2022-09-05 12:33:12], mode=PLATFORM_GENERATION, duration=0:00:03.086, duration_ms=3086, data={name=test}
+timestamp=[2022-09-05 12:33:43], mode=PLATFORM_GENERATION, duration=0:00:02.938, duration_ms=2938, data={name=test}
+timestamp=[2022-09-05 12:34:09], mode=PLATFORM_GENERATION, duration=0:00:04.879, duration_ms=4879, data={name=test}
+timestamp=[2022-09-05 12:34:49], mode=PLATFORM_GENERATION, duration=0:00:02.697, duration_ms=2697, data={name=test}
+timestamp=[2022-09-05 12:42:04], mode=APP_CREATION, duration=0:00:05.202, duration_ms=5202, data={name=metetest, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=microBlazeWithFirst_wrapper, application_type=application}
+timestamp=[2022-09-05 12:43:09], mode=PLATFORM_GENERATION, duration=0:00:03.722, duration_ms=3722, data={name=microBlazeWithFirst_wrapper}
+timestamp=[2022-09-05 12:43:25], mode=PLATFORM_GENERATION, duration=0:00:02.594, duration_ms=2594, data={name=microBlazeWithFirst_wrapper}
+timestamp=[2022-09-05 12:43:40], mode=PLATFORM_GENERATION, duration=0:00:02.652, duration_ms=2652, data={name=microBlazeWithFirst_wrapper}
+timestamp=[2022-09-05 12:43:40], mode=BUILD, duration=0:00:00.308, duration_ms=308, data={name=metetest, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 12:43:51], mode=PLATFORM_GENERATION, duration=0:00:02.748, duration_ms=2748, data={name=microBlazeWithFirst_wrapper}
+timestamp=[2022-09-05 12:44:45], mode=PLATFORM_GENERATION, duration=0:00:07.047, duration_ms=7047, data={name=microBlazeWithFirst_wrapper}
+timestamp=[2022-09-05 12:44:50], mode=BUILD, duration=0:00:00.986, duration_ms=986, data={name=metetest, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 12:44:51], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=metetest_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 13:57:03], mode=BUILD, duration=0:00:00.813, duration_ms=813, data={name=metetest, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 13:57:04], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=metetest_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 13:57:13], mode=BUILD, duration=0:00:00.187, duration_ms=187, data={name=metetest, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 13:57:14], mode=BUILD, duration=0:00:00.187, duration_ms=187, data={name=metetest_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 14:16:55], mode=BUILD, duration=0:00:01.192, duration_ms=1192, data={name=metetest, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 14:20:05], mode=BUILD, duration=0:00:01.332, duration_ms=1332, data={name=metetest, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 14:25:34], mode=APP_CREATION, duration=0:00:06.117, duration_ms=6117, data={name=secondTry, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=secondMicro, application_type=application}
+timestamp=[2022-09-05 14:26:07], mode=PLATFORM_GENERATION, duration=0:00:04.503, duration_ms=4503, data={name=secondMicro}
+timestamp=[2022-09-05 14:27:00], mode=PLATFORM_GENERATION, duration=0:00:09.935, duration_ms=9935, data={name=secondMicro}
+timestamp=[2022-09-05 14:27:56], mode=BUILD, duration=0:00:01.146, duration_ms=1146, data={name=secondTry, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 14:30:13], mode=BUILD, duration=0:00:00.187, duration_ms=187, data={name=secondTry, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 14:41:19], mode=BUILD, duration=0:00:00.953, duration_ms=953, data={name=secondTry, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 14:41:19], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=secondTry_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 14:41:35], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=secondTry, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 14:41:35], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=secondTry_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 15:02:08], mode=PLATFORM_GENERATION, duration=0:00:07.728, duration_ms=7728, data={name=secondMicro}
+timestamp=[2022-09-05 15:02:09], mode=BUILD, duration=0:00:01.141, duration_ms=1141, data={name=secondTry, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 15:03:24], mode=BUILD, duration=0:00:00.937, duration_ms=937, data={name=secondTry, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 15:03:25], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=secondTry_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 15:12:23], mode=BUILD, duration=0:00:00.891, duration_ms=891, data={name=secondTry, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 15:12:36], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=secondTry, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 15:12:37], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=secondTry_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 15:12:42], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=secondTry, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 15:12:43], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=secondTry_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 15:12:48], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=secondTry, configuration=Debug, clean_build=false}
+timestamp=[2022-09-05 15:12:49], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=secondTry_system, configuration=Debug, clean_build=false}

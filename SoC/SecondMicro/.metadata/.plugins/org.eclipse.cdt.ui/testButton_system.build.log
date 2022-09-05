@@ -1,0 +1,8 @@
+11:41:04 **** Clean-only build of configuration Debug for project testButton_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+11:41:04 Build Finished (took 189ms)
+
