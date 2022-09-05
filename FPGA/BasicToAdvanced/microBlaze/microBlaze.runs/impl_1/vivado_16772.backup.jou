@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Sep  5 10:17:19 2022
+# Process ID: 16772
+# Current directory: C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/impl_1
+# Command line: vivado.exe -log microBlazeWithSecond_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source microBlazeWithSecond_wrapper.tcl -notrace
+# Log file: C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/impl_1/microBlazeWithSecond_wrapper.vdi
+# Journal file: C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/impl_1\vivado.jou
+# Running On: DESKTOP-E5S1MHN, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17096 MB
+#-----------------------------------------------------------
+source microBlazeWithSecond_wrapper.tcl -notrace

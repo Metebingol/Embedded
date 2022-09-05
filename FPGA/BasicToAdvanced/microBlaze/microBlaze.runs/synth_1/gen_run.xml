@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1662361574" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/microBlazeWithFirst_wrapper.dcp">
+  <File Type="PA-TCL" Name="microBlazeWithSecond_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="microBlazeWithSecond_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="microBlazeWithSecond_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="microBlazeWithSecond_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="microBlazeWithSecond_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="microBlazeWithSecond_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="microBlazeWithSecond_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="microBlazeWithSecond_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="microBlazeWithSecond_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/microBlazeWithSecond/microBlazeWithSecond.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/microBlazeWithSecond/hdl/microBlazeWithSecond_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/microBlazeWithFirst/microBlazeWithFirst.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/microBlazeWithFirst/hdl/microBlazeWithFirst_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="microBlazeWithSecond_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/top.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xADC/xADC.srcs/constrs_1/imports/new/top.xdc"/>
+        <Attr Name="ImportTime" Val="1661253324"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/microBlazeWithFirst_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithSecond_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_microblaze_0_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_myFirstIP_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithFirst_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithSecond_mySecondIP_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="microBlazeWithSecond_clk_wiz_1_0"/>
+</GenRun>

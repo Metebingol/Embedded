@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="microBlazeWithSecond_mySecondIP_0_0_synth_1" LaunchDir="C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/microBlazeWithSecond_mySecondIP_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="microBlazeWithSecond_lmb_bram_0_synth_1" LaunchDir="C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/microBlazeWithSecond_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="microBlazeWithSecond_clk_wiz_1_0_synth_1" LaunchDir="C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/microBlazeWithSecond_clk_wiz_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Studies/Embedded/FPGA/BasicToAdvanced/microBlaze/microBlaze.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="microBlazeWithSecond_mySecondIP_0_0_synth_1"/>
+		<Parent Id="microBlazeWithSecond_lmb_bram_0_synth_1"/>
+		<Parent Id="microBlazeWithSecond_clk_wiz_1_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
