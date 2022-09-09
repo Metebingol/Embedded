@@ -59,7 +59,7 @@ begin
         variable count : integer := 0;
     begin
         if (resetClock = '0') then
-        elsif (((rising_edge(sclk)) and (ClockEdge_p = '0')) or ((falling_edge(sclk)) and (ClockEdge_p = '1'))) then
+        elsif (((rising_edge(sclk)) and (ClockEdge_p = '0')) or ((falling_edge(sclk)) and (ClockEdge_p = '1'))) then --polarization settings
             case stateMaster is
                 when ready =>
                     for i in 0 to slaveNumber - 1 loop

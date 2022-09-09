@@ -1,0 +1,61 @@
+Instruction A1:
+    Create New Project/
+        File=>Project=>New 
+    Select Necesarry parameter/
+        First Wizard Page:
+            Click<next>
+        Second Wizard Page:
+            Write<Project_Name%Optional%>                       ! Dont put "space" and parenthesis
+            Write<Project_Name%Optional%>                       ! Dont put "space" and parenthesis
+        Third Wizard Page:
+            Select<RTL Project>
+        Four Wizard Page:
+            Determine<Paremeter%Depended%>                      ! Free to Select parameter and board 
+Instruction A2:
+    Create Block design/
+        IP INTEGRATOR => Create Block Design
+    Add Necesarry peripheral/
+        Click<"+" Symbol on diagram>
+    add microblaze/
+        Click<"+" Symbol on diagram and select "microblaze"> 
+    configurate microblaze/
+        Click<Run Block Automation>
+        preset<keep Default>
+        local Memory<memory of microblaze %Optional_32kB advised_%>
+        Cache configuration <flash memory%Optional_8kb advised_%>
+        Debug Module <Debug only>
+        peripheral AXI port <enabled>
+        Interrupt Controller<Checked>
+        Clock Connection<keep Default>
+        Click<ok>
+    configurate Connection/
+        Click<Run Connection Automation>
+        Select<All Automation>
+        Click<ok>
+    configurate Connection manually/
+        Click<Regenerate Layout _Rotating Arrow symbol_>
+    configurate clock wizard/
+        DoubleClick<clk_wiz_1>
+        First wizard Page:
+            Change<CLK_IN_1&Custom->sys clock>
+    Check validation/
+        Click<Validate Design>
+Instruction A3:
+    goto Source Hierarchy/ 
+        RightClick<yourDesign>
+    Create HDL Wrapper/
+        Click<create HDL Wrapper>
+    Compile files/
+        SYNTHESIS => IMPLEMENTATION => Generate Bitstream
+    export XSA/
+        File => Export => Export Block Design
+        select<Path>
+        Click<ok>
+
+
+    
+
+
+
+
+

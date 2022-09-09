@@ -1,0 +1,81 @@
+Instruction A1:
+    Create New Project/
+        File=>Project=>New 
+    Select Necesarry parameter/
+        First Wizard Page:
+            Click<next>
+        Second Wizard Page:
+            Write<Project_Name%Optional%>                       ! Dont put "space" and parenthesis
+            Write<Project_Name%Optional%>                       ! Dont put "space" and parenthesis
+        Third Wizard Page:
+            Select<RTL Project>
+        Four Wizard Page:
+            Determine<Paremeter%Depended%>                      ! Free to Select parameter and board 
+Instruction A2: 
+    Create IP Creater/
+        Tools => Create and Package New IP 
+    Select Necesarry parameter /
+        First Wizard Page:
+            Click<next>
+        Second Wizard Page:
+            Select<AXI4 peripheral Interface>                   ! If you dont create block design with microblaze, the other options can be selected
+        Third Wizard Page: 
+            Determine<All parameter%Optional%>
+        Four Wizard Page:
+            Determine<All parameter%Optional%>                  ! Number register option : depends needed data memory 
+        Last Wizard Page:
+            Select<Edit IP>
+            Click<Finish>
+Instruction A3:
+"
+Identification: <All Optional>
+Compatibility:  <Keep Default>
+File Groups:    <Keep Default>
+Customization Parameters: <Keep Default>
+Ports and Interfaces:  <Keep Default>
+Addressing and Memory: <Keep Default>
+Customization GUI:  <Customize after generic parameter is inserted (if any generic paramter is written in source file)>
+Review and Package: <Finish creating>
+"
+    Open Source File/
+        Open<top file>
+        Open<AXI file>
+    Add Parameter/
+        Add<port parameter IP Top Source>
+        Add<generic parameter IP Top Source>
+        Add<port parameter IP AXI4 Source>
+        Add<generic parameter AXI4 Source>
+    goto Customization Parameter/
+        Click<Merge Changes from ...>
+    goto Customization GUI/
+        Click<Customize generic parameter in GUI>
+
+
+    Open Source File/
+        Edit<top file%Optional%>
+        Edit<AXI file%Optional%>
+
+    goto Customization Parameter/
+        Click<Customize generic parameter in GUI>
+    goto Customization GUI/
+        Click<Customize generic parameter in GUI>
+    goto Review and Package/
+        Click<Re-Package IP>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
